@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html><head></head><body>
-<form action="/hello" method="POST">
-    Name:
-    <input type="text" name="name">
-    <input type="submit" value="Send">
-  </form>
-</body></html>
+<html>
+<head>
+</head>
+<body>
+<p>Displaying as many candles as the user requests.</p>
+<% @my_array.each do |row| %>
+<% row.each do |att| + '|' %>
+<%= att %>
+<% end %>
+<br>
+<% end %>
+</body>
+</html

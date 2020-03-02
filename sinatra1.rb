@@ -43,6 +43,16 @@ end
  get "/greet" do 
   "Good evening #{session[:name]}"
  end
+ 
+get "/howmany" do
+erb :howmany
+end
+   
+post "/candles" do
+@cndle = params[:candles].to_i
+erb :candles
+
+end 
    
    
    
